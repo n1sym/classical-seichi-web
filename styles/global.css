@@ -1,11 +1,13 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  max-width: 1040px;
 }
 
 * {
@@ -24,4 +26,24 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* Inline code */
+:not(pre) > code {
+	padding: 0.2em 0.4em;
+  font-size: 85%;
+  color: #000000d1;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  background-color: #7a95b612;
+  border-radius: 3px;
+	white-space: normal;
+}
+
+#flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flex-container > .raw-item {
+  margin: 1px;
 }
